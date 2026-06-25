@@ -92,7 +92,7 @@ class NODORegulator(BaseEstimator, TransformerMixin):
         check_is_fitted(self, attributes=['embedding_', 'X_train_'])
         X = check_array(X, accept_sparse=['csr', 'csc'], ensure_2d=True)
 
-        if X.shape != self.n_features_in_:
+        if X.shape[1] != self.n_features_in_:
             raise ValueError(f"Dimensão de features incompatível. Esperado {self.n_features_in_}, recebido {X.shape}")
 
         if not issparse(X) and not issparse(self.X_train_) and np.array_equal(X, self.X_train_):
