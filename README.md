@@ -18,7 +18,7 @@ Em cenários de Big Data, métodos tradicionais como t-SNE e UMAP tornam-se proi
 
 Comparação de tempo de execução (Escala Logarítmica):
 
-![Benchmark de Escalabilidade](download (10).png)
+![Benchmark de Escalabilidade](download (11).png)
 
 *O NODORegulator mantém estabilidade computacional mesmo com o aumento exponencial do volume de dados.*
 
